@@ -9,7 +9,7 @@ package com.sdl.classloader;
 public class Test6 {
     public static void main(String[] args) throws Exception {
         /**
-         * 类加载
+         * 调用ClassLoader类的loadClass方法加载-个类， 并不是对类的主动使用，不会导致类的初始化
          */
         ClassLoader systemClassLoader = ClassLoader.getSystemClassLoader();
         Class<?> aClass = systemClassLoader.loadClass("com.sdl.classloader.Sample");
